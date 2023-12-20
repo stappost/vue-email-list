@@ -9,7 +9,7 @@
 <body>
     <div id="app">
         <ul>
-            <li v-for="(mail, index) in emails">
+            <li v-show="emails.length == 10" v-for="(mail, index) in emails">
                 {{emails[index]}}
             </li>
         </ul>
